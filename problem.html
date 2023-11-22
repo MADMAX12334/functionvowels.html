@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //vowelscounters//
+        function vowelcounter(a){
+            var count=0;
+            for(i=0;i<a.length;i++){
+                if(a[i]=="a" || a[i]=="e" || a[i]=="i" ||a[i]=="o" ||a[i]=="u"){
+            count=count+1
+                }
+            }
+            console.log("total vowels :"+count)
+            
+            
+            }
+         vowelcounter("the king of odi virat kohli");
+         //contraing//
+         
+         function vowel(b){
+         var count="";
+           for(i=0;i<b.length;i++){
+         if(b[i]=="a" || b[i]=="e" || b[i]=="i" ||b[i]=="o" ||b[i]=="u"){
+            count=count+b[i]
+          }
+        
+           }
+          console.log("concating vowels : "+count)
+    
+    
+          }
+          vowel("the king of odi virat kohli");
+          // fetching vowels from a string at even and odd places
+
+function vowelEO(c){
+    var count="";
+    var count1="";
+    for(i=0;i<c.length;i++){
+        if(i%2==0 && (c[i]=="a" || c[i]=="e" || c[i]=="i" ||c[i]=="o" ||c[i]=="u")){
+            count=count+c[i];
+           
+        }
+     
+    }
+    console.log("Vowels at even positions : "+count)
+    console.log("-----------------------------------")
+    
+     for(i=0;i<c.length;i++){
+        if(i%2!=0 && (c[i]=="a" || c[i]=="e" || c[i]=="i" ||c[i]=="o" ||c[i]=="u")){
+            count1=count1+c[i];
+           
+        }
+     
+    }
+    console.log("Vowels at odd positions : "+count1)
+    
+}
+vowelEO("aeiou");
+    </script>
